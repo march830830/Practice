@@ -13,6 +13,8 @@
 		47D1639E1C107E7B00F6C0E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D1639C1C107E7B00F6C0E1 /* LaunchScreen.storyboard */; };
 		47D163A91C107E7B00F6C0E1 /* PracticeGitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D163A81C107E7B00F6C0E1 /* PracticeGitTests.m */; };
 		47D163B41C107E7B00F6C0E1 /* PracticeGitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D163B31C107E7B00F6C0E1 /* PracticeGitUITests.m */; };
+		47D163C61C107F9700F6C0E1 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D163C51C107F9700F6C0E1 /* MainController.m */; };
+		47D163C91C107FA300F6C0E1 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D163C81C107FA300F6C0E1 /* MainView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		47D163AF1C107E7B00F6C0E1 /* PracticeGitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeGitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D163B31C107E7B00F6C0E1 /* PracticeGitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PracticeGitUITests.m; sourceTree = "<group>"; };
 		47D163B51C107E7B00F6C0E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D163C41C107F9700F6C0E1 /* MainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainController.h; sourceTree = "<group>"; };
+		47D163C51C107F9700F6C0E1 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
+		47D163C71C107FA300F6C0E1 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		47D163C81C107FA300F6C0E1 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,7 @@
 		47D1638D1C107E7B00F6C0E1 /* PracticeGit */ = {
 			isa = PBXGroup;
 			children = (
+				47D163C11C107F8700F6C0E1 /* Classes */,
 				47D163911C107E7B00F6C0E1 /* AppDelegate.h */,
 				47D163921C107E7B00F6C0E1 /* AppDelegate.m */,
 				47D1639A1C107E7B00F6C0E1 /* Assets.xcassets */,
@@ -130,6 +137,33 @@
 				47D163B51C107E7B00F6C0E1 /* Info.plist */,
 			);
 			path = PracticeGitUITests;
+			sourceTree = "<group>";
+		};
+		47D163C11C107F8700F6C0E1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				47D163C21C107F8700F6C0E1 /* Controllers */,
+				47D163C31C107F8700F6C0E1 /* Views */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		47D163C21C107F8700F6C0E1 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47D163C41C107F9700F6C0E1 /* MainController.h */,
+				47D163C51C107F9700F6C0E1 /* MainController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		47D163C31C107F8700F6C0E1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47D163C71C107FA300F6C0E1 /* MainView.h */,
+				47D163C81C107FA300F6C0E1 /* MainView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D163931C107E7B00F6C0E1 /* AppDelegate.m in Sources */,
+				47D163C91C107FA300F6C0E1 /* MainView.m in Sources */,
+				47D163C61C107F9700F6C0E1 /* MainController.m in Sources */,
 				47D163901C107E7B00F6C0E1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

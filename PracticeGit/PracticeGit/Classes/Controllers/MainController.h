@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MainView;
 
-@interface MainController : UIViewController
+@interface MainController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic, strong) MainView *mainView;
 
 @end

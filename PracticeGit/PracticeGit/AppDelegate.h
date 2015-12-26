@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 @class MainController;
+@class LeadingPageView;
+@class NavController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (nonatomic, strong) MainController *mainController;
+@property (nonatomic, strong) LeadingPageView *leadingPageView;;
+@property (nonatomic, strong) NavController *navController;
 
 @end
 
